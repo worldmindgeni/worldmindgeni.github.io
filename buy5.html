@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата | Game Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1e21;
+            color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .payment-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .payment-header h1 {
+            font-size: 32px;
+            color: #f4f4f4;
+        }
+        .price {
+            font-size: 24px;
+            color: #f4f4f4;
+            margin-top: 10px;
+        }
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .payment-method {
+            background-color: #2a2c2f;
+            border: 1px solid #3c3f41;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        .payment-method:hover {
+            border-color: #0078f2;
+        }
+        .payment-method img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .payment-method label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .confirm-button {
+            display: block;
+            width: 100%;
+            background-color: #0078f2;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 40px;
+        }
+        .confirm-button:hover {
+            background-color: #005bb5;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #8a8d91;
+        }
+
+        
+        @media (max-width: 768px) {
+            .payment-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            .payment-method {
+                width: 90%;
+            }
+            .payment-header h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .payment-header h1 {
+                font-size: 24px;
+            }
+            .payment-method {
+                padding: 20px;
+            }
+            .payment-method img {
+                width: 60px;
+            }
+            .confirm-button {
+                font-size: 18px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="payment-header">
+            <h1>Выберите способ оплаты</h1>
+            <p>Оплата для игры <strong>Squad</strong></p>
+            
+            <div class="price">
+                Цена: <strong>$17.99</strong>
+            </div>
+        </div>
+
+        
+        <form action="confirmation5.html" method="POST">
+            <div class="payment-options">
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="credit-card" required>
+                        <img src="https://w7.pngwing.com/pngs/354/590/png-transparent-credit-card-art-credit-card-payment-debit-card-emv-cash-credit-card-blue-text-rectangle-thumbnail.png" alt="Кредитная карта">
+                        Кредитная карта
+                    </label>
+                </div>
+
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="paypal" required>
+                        <img src="https://avatars.mds.yandex.net/i?id=b3d09cf8ea4e2076813d13e9c34b81c1_sr-5232270-images-thumbs&n=13" alt="PayPal">
+                        PayPal
+                    </label>
+                </div>
+
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="qiwi" required>
+                        <img src="qiwi.png" alt="Qiwi">
+                        Qiwi
+                    </label>
+                </div>
+
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="google-pay" required>
+                        <img src="google-pay.png" alt="Google Pay">
+                        Google Pay
+                    </label>
+                </div>
+
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="apple-pay" required>
+                        <img src="apple-pay.png" alt="Apple Pay">
+                        Apple Pay
+                    </label>
+                </div>
+
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="yandex-money" required>
+                        <img src="yandex-money.png" alt="Яндекс.Деньги">
+                        Яндекс.Деньги
+                    </label>
+                </div>
+
+                
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment-method" value="webmoney" required>
+                        <img src="webmoney.png" alt="WebMoney">
+                        WebMoney
+                    </label>
+                </div>
+            </div>
+
+            
+            <button type="submit" class="confirm-button">
+                Подтвердить и оплатить ( $17.99 )
+            </button>
+        </form>
+
+        
+        <div class="footer">
+            <p>Game Shop © 2024. Все права защищены.</p>
+        </div>
+    </div>
+</body>
+</html>
