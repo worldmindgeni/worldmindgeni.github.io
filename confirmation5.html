@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение покупки | Game Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1e21;
+            color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .confirmation-header {
+            margin-bottom: 40px;
+        }
+        .confirmation-header h1 {
+            font-size: 32px;
+            color: #f4f4f4;
+        }
+        .confirmation-details {
+            font-size: 24px;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 20px;
+            color: #f4f4f4;
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #0078f2;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 40px;
+        }
+        .back-button:hover {
+            background-color: #005bb5;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #8a8d91;
+        }
+
+        
+        @media (max-width: 480px) {
+            .confirmation-header h1 {
+                font-size: 28px;
+            }
+            .confirmation-details {
+                font-size: 20px;
+            }
+            .back-button {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="confirmation-header">
+            <h1>Спасибо за покупку!</h1>
+        </div>
+
+        
+        <div class="confirmation-details">
+            Ваша покупка <strong>Squad</strong> завершена успешно.<br>
+            Выбранный способ оплаты: <strong>Кредитная карта</strong> 
+        </div>
+        <div class="price">
+            Итоговая сумма: <strong>$17.99</strong>
+        </div>
+
+        
+        <a href="index.html" class="back-button">Вернуться на главную страницу</a>
+
+        
+        <div class="footer">
+            <p>Game Shop © 2024. Все права защищены.</p>
+        </div>
+    </div>
+</body>
+</html>
