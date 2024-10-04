@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="loader" class="loader"></div>
-
-    <div id="content" class="hidden">
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+    </div>
     <header>
         <div class="logo">
             <a href="index.html" class="logo-container">
@@ -35,8 +39,8 @@
 
     <main>
         <section class="hero">
-            <h2>Топ игры недели</h2>
-            <p>Эксклюзивные предложения для вас</p>
+            <h2 class="animated-text">Топ игры недели</h2>
+            <p class="animated-text">Эксклюзивные предложения для вас</p>
             <a href="#game"  class="btn">Смотреть игры</a>
         </section>
 
@@ -96,15 +100,30 @@
     </main>
 
     <footer>
+        <div class="footer-links">
+            <li><a href="index.html">Главная</a></li>
+                <li><a href="dayz.html">Dayz</a></li>
+                <li><a href="rust.html">Rust</a></li>
+                <li><a href="pubg.html">Pubg</a></li>
+                <li><a href="gta5.html">Gta5</a></li>
+                <li><a href="cyberpunk2077.html">Cyberpunk2077</a></li>
+                <li><a href="squad.html">Squad</a></li>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0548/9976/9562/t/25/assets/image-removebg-preview.png?v=80862281659531190881665137073" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="https://banner2.cleanpng.com/20181201/hwk/kisspng-social-media-transparency-portable-network-graphic-5c025379ca9334.2483962515436563138298.jpg" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="https://mshp.gov.by/uploads/images/upload/links/instagram.png" alt="Instagram"></a>
+            <a href="https://vk.com" target="_blank"><img src="https://krymavtotex.ru/image/raznoe/VK%20krymavtotex.ru.jpg" alt="VK"></a>
+        </div>
         <p>&copy; 2024 Game Shop</p>
     </footer>
-     <script>
-        window.onload = function() {
-            const loader = document.getElementById('loader');
-            const content = document.getElementById('content');
-            loader.style.display = 'none';
-            content.classList.remove('hidden');
-        };
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector(".loader-container").style.display = "none";
+                document.querySelector("body").style.overflow = "auto";  // Возвращаем скролл после загрузки
+            }, 3000); // Задержка в 3 секунды
+        });
     </script>
 </body>
 </html>
